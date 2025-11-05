@@ -11,19 +11,20 @@
 
 <p align="center">
         📖 <a href="https://arxiv.org/pdf/2511.00108">Pelican-VL 1.0 Report</a>&nbsp&nbsp 
-        | &nbsp&nbsp🤗 <a href="https://huggingface.co">Hugging Face Paper(待上传)</a>&nbsp&nbsp
-        | &nbsp&nbsp🤗 <a href="https://huggingface.co">Hugging Face Model(待上传)</a>&nbsp&nbsp 
-        | &nbsp&nbsp🤖 <a href="https://modelscope.cn">ModelScope(待上传)</a>&nbsp&nbsp 
+        | &nbsp&nbsp🤗 <a href="https://huggingface.co">Hugging Face Paper(TBD)</a>&nbsp&nbsp
+        | &nbsp&nbsp🤗 <a href="https://huggingface.co">Hugging Face Model(TBD)</a>&nbsp&nbsp 
+        | &nbsp&nbsp🤖 <a href="https://modelscope.cn">ModelScope(TBD)</a>&nbsp&nbsp 
 <br>
         🚀 <a href="#quick-start-with-huggingface">Quick Start</a>&nbsp&nbsp 
         | &nbsp&nbsp🌐  <a href="https://pelican-vl.github.io">Project Website</a>&nbsp&nbsp
+         &nbsp&nbsp🌐  <a href="## Evaluation Reproduction">Evaluation</a>&nbsp&nbsp
 </p>
 
 
 
 
 <p align="center">
-    <img src="./images/x_humanoid_logo_v3.png" width="300"/>
+    <img src="./images/x_humanoid_logo_v3.png" width="400"/>
 <p>
 
 ## 🚀🚀🚀 News
@@ -34,6 +35,11 @@
 ## Introduction
 We presents Pelican-VL 1.0, a new family of open-source embodied brain models with parameter scales ranging from 7B to 72B. Pelican-VL 1.0 is currently the largest-scale open-source embodied multimodal brain model. Its core advantage lies in the in-depth integration of data power and intelligent adaptive learning mechanisms.
 
+#### Overview:
+
+<p align="center">
+    <img src="./images/teaser.jpg" width="100%"/>
+<p>
 
 #### 🌟 Highlights:
 
@@ -46,11 +52,11 @@ We presents Pelican-VL 1.0, a new family of open-source embodied brain models wi
 * **Self-Correction and Iterative Learning**: Through DPPO cyclic training, Pelican-VL exhibits a “self-correcting” capability. After each reinforcement learning cycle, the model automatically generates new challenging samples for retraining—similar to repeated practice and reflection. Over time, its weaknesses are gradually addressed, and its abilities continuously improve. This process mirrors the concept of “deliberate practice,” allowing Pelican-VL to advance iteratively and achieve performance on par with top-tier proprietary systems.
 
 
-#### Overview:
+<!-- #### Overview:
 
 <p align="center">
     <img src="./images/teaser.jpg" width="100%"/>
-<p>
+<p> -->
 
 
 
@@ -82,7 +88,7 @@ Benchmark performance radar comparison of Pelican-VL 1.0 (72B) against other mod
 ## 🛠️ Downstream Applications
 
 
-xxxxxxxxxxxxxx
+TBD
 
 
 
@@ -91,8 +97,8 @@ We will released the following models on 🤗 [Hugging Face](https://huggingface
 
 | Model Name | Parameters | Link | 
 |------------|----------------|------|
-| Pelican1.0-VL-7B | 7B    | [🔗 Link](https://huggingface.co/) |
-| Pelican1.0-VL-72B | 72B  | [🔗 Link](https://huggingface.co/) |
+| Pelican1.0-VL-7B | 7B    | [🔗 Link](https://huggingface.co/) TBD|
+| Pelican1.0-VL-72B | 72B  | [🔗 Link](https://huggingface.co/) TBD |
 
 
 
