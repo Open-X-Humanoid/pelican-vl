@@ -11,13 +11,12 @@
 
 <p align="center">
         📖 <a href="https://arxiv.org/pdf/2511.00108">Pelican-VL 1.0 Report</a>&nbsp&nbsp 
-        | &nbsp&nbsp🤗 <a href="https://huggingface.co">Hugging Face Paper(TBD)</a>&nbsp&nbsp
         | &nbsp&nbsp🤗 <a href="https://huggingface.co">Hugging Face Model(TBD)</a>&nbsp&nbsp 
         | &nbsp&nbsp🤖 <a href="https://modelscope.cn">ModelScope(TBD)</a>&nbsp&nbsp 
 <br>
-        🚀 <a href="#quick-start-with-huggingface">Quick Start</a>&nbsp&nbsp 
-        | &nbsp&nbsp🌐  <a href="https://pelican-vl.github.io">Project Website</a>&nbsp&nbsp
-         &nbsp&nbsp🌐  <a href="## Evaluation Reproduction">Evaluation</a>&nbsp&nbsp
+        🚀 <a href="#quick-start">Quick Start</a>&nbsp&nbsp 
+        | &nbsp&nbsp🌐 <a href="https://pelican-vl.github.io">Project Website</a>&nbsp&nbsp
+        | &nbsp&nbsp🛠️ <a href="#evaluation-reproduction">Evaluation</a>&nbsp&nbsp
 </p>
 
 
