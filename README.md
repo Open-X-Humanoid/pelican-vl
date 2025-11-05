@@ -60,8 +60,8 @@ We presents Pelican-VL 1.0, a new family of open-source embodied brain models wi
 ### Overall Tasks
 
 <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
-    <img src="/media/renxiancong/projects/robovlm-train/scripts/example/images/100B.jpg" width="45%" />
-	<img src="/media/renxiancong/projects/robovlm-train/scripts/example/images/200B.jpg" width="45%" />
+    <img src="./images/100B.jpg" width="45%" />
+	<img src="./images/200B.jpg" width="45%" />
 Performance comparison of Pelican-VL1.0. (Left) Comparison against models with ≤100B parameters. The shaded(pink) region highlights the performance gain over our baseline. (Right) Comparison against models with ≥100B parameters, including leading open-source and proprietary models, where our model also demonstrates SOTA performance.
 </div>
 
