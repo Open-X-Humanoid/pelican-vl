@@ -11,10 +11,10 @@
 
 <p align="center">
         📖 <a href="https://arxiv.org/pdf/2511.00108">Pelican-VL 1.0 Report</a>&nbsp&nbsp 
-        | &nbsp&nbsp🤗 <a href="https://huggingface.co">Hugging Face Model(TBD)</a>&nbsp&nbsp 
+        | &nbsp&nbsp🤗 <a href="https://huggingface.co">Hugging Face(TBD)</a>&nbsp&nbsp 
         | &nbsp&nbsp🤖 <a href="https://modelscope.cn">ModelScope(TBD)</a>&nbsp&nbsp 
 <br>
-        🚀 <a href="#🚀-quick-start">Quick Start</a>&nbsp&nbsp 
+        🧰 <a href="#🧰-quick-start">Quick Start</a>&nbsp&nbsp 
         | &nbsp&nbsp🌐 <a href="https://pelican-vl.github.io">Project Website</a>&nbsp&nbsp
         | &nbsp&nbsp🛠️ <a href="#evaluation-reproduction">Evaluation</a>&nbsp&nbsp
 </p>
@@ -87,8 +87,7 @@ Benchmark performance radar comparison of Pelican-VL 1.0 (72B) against other mod
 ## 🛠️ Downstream Applications
 
 
-TBD
-
+Please see our project website：🌐 <a href="https://pelican-vl.github.io">pelican-vl.github.io</a>
 
 
 ## 🧠 Open-Source Weights
@@ -122,13 +121,12 @@ pip install transformers==4.51.1
 pip install flash-attn==2.6.1 --no-build-isolation # if GPU supports
 ``` -->
 
-## 🚀 Quick Start
+## 🧰 Quick Start
 
-Here, we provide some simple embodied examples to show how to use the chat model Fine-Tuning with `Swift`.
-
+Here, we provide some simple embodied examples to show how to use the chat model Fine-Tuning with <a href="https://swift.readthedocs.io/zh-cn/latest/index.html">`Swift`</a> .
 
 ### 🛠️ Installation
-Install swift
+Install <a href="https://swift.readthedocs.io/zh-cn/latest/index.html">`Swift`</a>
 ```shell
 # pip安装
 # pip install ms-swift -U
@@ -211,16 +209,19 @@ For more detailed parameters, please refer to the official documents of <a href=
 ## Evaluation Reproduction
 To facilitate faithful reproduction of our reported results, we summarize our official evaluation settings below.
 
-Please refer to **[Detailed Evaluation.md](Evaluation.md)**.
+Please refer to **[Evaluation.md](Evaluation.md)**.
 
 ## 📬 Contact With Us
 - Email: {vito.dai, jason.ju}@x-humanoid.com
+- Project website: [pelican-vl.github.ioo](https://pelican-vl.github.io/)
 
+## License
+
+This project is released under the [MIT license](LICENSE). Parts of this project contain code and models from other sources, which are subject to their respective licenses.
 
 ## Citation
 
-If you find our paper useful in your research, please cite:
-
+If you find our Pelican-VL useful in your research, please cite:
 
 
 
