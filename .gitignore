@@ -1,0 +1,47 @@
+### 通用模板 ###
+.DS_Store              # macOS 系统文件
+Thumbs.db              # Windows 缩略图缓存
+*.log                  # 日志文件
+*.tmp                  # 临时文件
+*.swp                  # Vim 交换文件
+~$*                    # Office 临时文件
+
+### 开发环境 ###
+.env                   # 环境变量文件（包含敏感信息）
+.venv/                 # Python 虚拟环境
+node_modules/          # Node.js 依赖目录
+vendor/                # Composer/PHP 依赖
+bin/                   # 编译生成的二进制文件
+build/                 # 构建目录
+dist/                  # 分发目录
+out/                   # 输出目录(如 TypeScript)
+*.exe                  # 可执行文件
+*.pyc                  # Python 字节码
+__pycache__/           # Python 缓存目录
+
+### IDE/编辑器 ###
+.idea/                 # JetBrains IDE
+.vscode/               # VS Code 配置（不忽略工作区设置）
+*.code-workspace       # VS Code 工作区文件（建议保留）
+.settings/             # Eclipse
+.project
+.classpath
+
+### 测试/覆盖率报告 ###
+*.lcov                 # LCOV 覆盖率数据
+junit.xml              # JUnit 测试报告
+
+### 包管理器 ###
+package-lock.json      # 保留 npm 锁定文件（不忽略）
+yarn.lock              # 保留 Yarn 锁定文件（不忽略）
+pnpm-lock.yaml         # 保留 pnpm 锁定文件
+pipfile.lock           # 保留 Pipenv 锁定文件
+
+### 自定义 ###
+output
+*wandb
+.gradio
+wandb
+results
+result
+__pycache__/
