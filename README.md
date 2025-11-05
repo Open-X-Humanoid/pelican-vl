@@ -14,7 +14,7 @@
         | &nbsp&nbsp🤗 <a href="https://huggingface.co">Hugging Face Model(TBD)</a>&nbsp&nbsp 
         | &nbsp&nbsp🤖 <a href="https://modelscope.cn">ModelScope(TBD)</a>&nbsp&nbsp 
 <br>
-        🚀 <a href="#quick-start">Quick Start</a>&nbsp&nbsp 
+        🚀 <a href="#🚀-quick-start">Quick Start</a>&nbsp&nbsp 
         | &nbsp&nbsp🌐 <a href="https://pelican-vl.github.io">Project Website</a>&nbsp&nbsp
         | &nbsp&nbsp🛠️ <a href="#evaluation-reproduction">Evaluation</a>&nbsp&nbsp
 </p>
@@ -92,7 +92,7 @@ TBD
 
 
 ## 🧠 Open-Source Weights
-We will released the following models on 🤗 [Hugging Face](https://huggingface.co) and 🤖 [ModelScope](https://modelscope.cn):
+We will released our pelican models on 🤗 [Hugging Face](https://huggingface.co) and 🤖 [ModelScope](https://modelscope.cn):
 
 | Model Name | Parameters | Link | 
 |------------|----------------|------|
@@ -121,7 +121,6 @@ pip install wandb # wandb=0.21.0
 pip install transformers==4.51.1 
 pip install flash-attn==2.6.1 --no-build-isolation # if GPU supports
 ``` -->
-
 
 ## 🚀 Quick Start
 
@@ -185,10 +184,8 @@ swift sft \
     --max_length 8192 \
     --output_dir /xxx/output \
     --warmup_ratio 0.05 \
-    --dataset_num_proc 16 \
     --dataloader_num_workers 16 \
     --save_only_model True \
-    --load_from_cache_file False \
     --attn_impl flash_attn
 ```
 
