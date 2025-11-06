@@ -158,33 +158,40 @@ pip install flash-attn==2.6.1 --no-build-isolation # if GPU supports
 ### LoRa Fine-Tuning
 **Dataset Source** 
 
-All embodied data used in this demo are JSON files and all derived from public datasets on Hugging Face. 
-<!-- Detailed source information, access links, and usage notes are provided below:  -->
+All embodied data used in this demo are JSON files and all derived from public datasets on Hugging Face:
 
-**1. Cosmos Reasoning SFT Video Data**
-* **Hugging Face Link**: <a href="https://huggingface.co/datasets/nvidia/Cosmos-Reason1-SFT-Dataset/tree/main/robovqa ">nvidia/Cosmos-Reason1-SFT-Dataset/robovqa</a>
+| Dataset Name | Data Type | Link | 
+|------------|-----|-----------|
+| Cosmos Reasoning SFT Data | Video    | [🤗 Link](https://huggingface.co/datasets/nvidia/Cosmos-Reason1-SFT-Dataset/tree/main/robovqa )  |
+| Robopoint GQA Data | Image  | [🤗 Link](https://huggingface.co/datasets/wentao-yuan/robopoint-data/tree/main )  |
+| VSI-Bench ScanNetpp Data | Video  | [🤗 Link](https://huggingface.co/datasets/nyu-visionx/VSI-Bench/tree/main ) |
+
+
+<!-- **1. Cosmos Reasoning SFT Video Data** -->
+<!-- * **Hugging Face Link**: <a href="https://huggingface.co/datasets/nvidia/Cosmos-Reason1-SFT-Dataset/tree/main/robovqa ">nvidia/Cosmos-Reason1-SFT-Dataset/robovqa</a> -->
 <!-- * **Data Fields**: `video` (local path to MP4 files), `conversations`(user-agent instruction judgment dialogues) -->
 <!-- * **Task Scenario**: Judge the feasibility of agent executing given instructions (e.g., "put the robot toy in the shelf" → select yes/no option) -->
 
-**2. Robopoint GQA Image Data**
-* **Hugging Face Link**:  <a href="https://huggingface.co/datasets/wentao-yuan/robopoint-data/tree/main ">wentao-yuan/robopoint-data</a>
+<!-- **2. Robopoint GQA Image Data** -->
+<!-- * **Hugging Face Link**:  <a href="https://huggingface.co/datasets/wentao-yuan/robopoint-data/tree/main ">wentao-yuan/robopoint-data</a> -->
 <!-- * **Data Fields**: `images` (local path to JPG files), `messages` (multi-turn object material QA dialogues)  -->
 <!-- * **Task Scenario**: Answer object material questions based on images (e.g., "What's the toilet made of?" → single-word response) -->
 
-**3. VSI-Bench ScanNetpp Video Data**
-* **Hugging Face Link**: <a href="https://huggingface.co/datasets/nyu-visionx/VSI-Bench/tree/main ">nyu-visionx/VSI-Bench</a>
+<!-- **3. VSI-Bench ScanNetpp Video Data** -->
+<!-- * **Hugging Face Link**: <a href="https://huggingface.co/datasets/nyu-visionx/VSI-Bench/tree/main ">nyu-visionx/VSI-Bench</a> -->
 <!-- * **Data Fields**: `video` (local path to MP4 files), `conversations`, `data_source` (ScanNetpp), `question_type` (object counting/relative distance) -->
 <!-- * **Task Scenario**: Video-based scene understanding (e.g., counting objects, judging relative distances between objects)  -->
 
-**Key Notes** 
+<!-- **Key Notes**  -->
 
-* The JSON files in this repo use local file paths (e.g., `/datasets/xxx`) that correspond to the file structure of the original Hugging Face datasets. 
+<!-- The JSON files in this repo use local file paths (e.g., `/datasets/xxx`) that correspond to the file structure of the original Hugging Face datasets.  -->
+Download the three datasets from the above links, Place the downloaded files in the local directory(e.g., `/datasets/xxx`) matching the paths in the JSON (or modify the JSON paths to your local storage path).
 
-* Before running the demo:\
-    *a.* Download the three datasets from the above links.\
-    *b.* Place the downloaded files in the local directory matching the paths in the JSON (or modify the JSON paths to your local storage path).
-* For data licensing, preprocessing details, and full file lists, refer to the "License" and "Dataset Card" sections on each Hugging Face dataset page.
-* All datasets are used in compliance with their original open-source agreements; please adhere to the usage restrictions specified by the dataset authors.
+<!-- * Before running the demo:\ -->
+<!-- *a.* Download the three datasets from the above links.\ -->
+<!-- *b.* Place the downloaded files in the local directory matching the paths in the JSON (or modify the JSON paths to your local storage path). -->
+<!-- * For data licensing, preprocessing details, and full file lists, refer to the "License" and "Dataset Card" sections on each Hugging Face dataset page. -->
+<!-- * All datasets are used in compliance with their original open-source agreements; please adhere to the usage restrictions specified by the dataset authors. -->
 
 ```shell
 # Using an interactive command line for training.
