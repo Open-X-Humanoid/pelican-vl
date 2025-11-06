@@ -197,14 +197,11 @@ Download the three datasets from the above links, Place the downloaded files in 
 # Using an interactive command line for training.
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
 NPROC_PER_NODE=8 \
-VIDEO_MAX_PIXELS=602112 \
-FPS_MIN_FRAMES=4 \
-FPS_MAX_FRAMES=32 \
 swift sft \
-    --model /media/vlm_model/Qwen2.5-VL-7B-Instruct \
-    --dataset /data/robopoint_example_500.json \
-              /data/vsibench_example_500.json \
-              /data/cosmos_example_500.json \
+    --model Qwen2.5-VL-7B-Instruct \
+    --dataset /datasets/robopoint_example_500.json \
+              /datasets/vsibench_example_500.json \
+              /datasets/cosmos_example_500.json \
     --train_type lora \
     --torch_dtype bfloat16 \
     --num_train_epochs 2 \
