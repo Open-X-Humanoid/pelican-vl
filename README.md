@@ -146,7 +146,6 @@ git clone https://github.com/modelscope/ms-swift.git
 cd ms-swift
 pip install -e .
 
-
 pip install qwen-vl-utils[decord] # qwen-vl-utils 0.0.11, decord 0.6.0
 pip install deepspeed==0.16.9 # distributed training
 pip install wandb # wandb=0.21.0
@@ -266,12 +265,10 @@ If you find our Pelican-VL useful in your research, please cite:
 
 
 ```BibTeX
-
 @article{Pelican-VL-1.0,
   title={Pelican-VL 1.0: A Foundation Brain Model for Embodied Intelligence},
   author={Yi Zhang, Che Liu, Xiancong Ren, Hanchu Ni, Shuai Zhang, Zeyuan Ding, Jiayu Hu, Hanzhe Shan, Zhenwei Niu, Zhaoyang Liu, Yue Zhao, Junbo Qi, Qinfan Zhang, Dengjie Li, Yidong Wang, Jiachen Luo, Yong Dai, Jian Tang, Xiaozhu Ju},
   journal={arXiv preprint arXiv:2511.00108},
   year={2025}
 }
-
 ```
