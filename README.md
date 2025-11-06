@@ -14,7 +14,7 @@
         | &nbsp&nbsp🤗 <a href="https://huggingface.co">Hugging Face(TBD)</a>&nbsp&nbsp 
         | &nbsp&nbsp🤖 <a href="https://modelscope.cn">ModelScope(TBD)</a>&nbsp&nbsp 
 <br>
-        🧰 <a href="#🧰-quick-start">Quick Start</a>&nbsp&nbsp 
+        🧰 <a href="#quick-start">Quick Start</a>&nbsp&nbsp 
         | &nbsp&nbsp🌐 <a href="https://pelican-vl.github.io">Project Website</a>&nbsp&nbsp
         | &nbsp&nbsp🛠️ <a href="#evaluation-reproduction">Evaluation</a>&nbsp&nbsp
 </p>
@@ -28,7 +28,7 @@
 
 ## 🚀🚀🚀 News
 
-* 2025.10.30: We have released the [Pelican-VL 1.0 Report](https://arxiv.org/pdf/2511.00108). The 7B、72B model for open source is coming soon. For more details, please check our report!
+* 2025.10.30: We have released the [**Pelican-VL 1.0 Report**](https://arxiv.org/pdf/2511.00108). The 7B、72B model for open source is coming soon. For more details, please check our report!
 
 
 ## Introduction
@@ -121,9 +121,9 @@ pip install transformers==4.51.1
 pip install flash-attn==2.6.1 --no-build-isolation # if GPU supports
 ``` -->
 
-## 🧰 Quick Start
+## Quick Start
 
-Here, we provide some simple embodied examples to show how to use the chat model Fine-Tuning with <a href="https://swift.readthedocs.io/zh-cn/latest/index.html">`Swift`</a> .
+Here, We provide you a simple script of LoRa fine-tuning and give you some embodied samples, allowing you to experience how to experiment with embodied data. Training is based on the LLM training and deployment framework <a href="https://swift.readthedocs.io/zh-cn/latest/index.html">**`Swift`**</a>.
 
 ### 🛠️ Installation
 <!-- Install <a href="https://swift.readthedocs.io/zh-cn/latest/index.html">`Swift`</a>
@@ -137,7 +137,6 @@ cd ms-swift
 pip install -e .
 ``` -->
 
-Install <a href="https://swift.readthedocs.io/zh-cn/latest/index.html">`Swift`</a> and  other packages
 ```shell
 # pip安装
 # pip install ms-swift -U
@@ -156,27 +155,34 @@ pip install flash-attn==2.6.1 --no-build-isolation # if GPU supports
 ```
 
 
-### Lora Fine-Tuning
-Dataset Source
-All JSON data files used in this demo are derived from public datasets on Hugging Face. Detailed source information, access links, and usage notes are provided below:
-#### 1. Cosmos Reasoning SFT Video Data
-Hugging Face Link: nvidia/Cosmos-Reason1-SFT-Dataset/robovqa \
-Data Fields: video (local path to MP4 files), conversations (user-agent instruction judgment dialogues) \
-Task Scenario: Judge the feasibility of agent executing given instructions (e.g., "put the robot toy in the shelf" → select yes/no option)
-#### 2. Robopoint GQA Image Data
-Hugging Face Link: wentao-yuan/robopoint-data \
-Data Fields: images (local path to JPG files), messages (multi-turn object material QA dialogues) \
-Task Scenario: Answer object material questions based on images (e.g., "What's the toilet made of?" → single-word response)
-#### 3. VSI-Bench ScanNetpp Video Data
-Hugging Face Link: nyu-visionx/VSI-Bench \
-Data Fields: video (local path to MP4 files), conversations, data_source (ScanNetpp), question_type (object counting/relative distance) \
-Task Scenario: Video-based scene understanding (e.g., counting objects, judging relative distances between objects) 
-#### **Key Notes** 
-The JSON files in this repo use local file paths (e.g., /datasets/xxx) that correspond to the file structure of the original Hugging Face datasets. 
+### LoRa Fine-Tuning
+**Dataset Source** 
 
-**Before running the demo**:
-* Download the three datasets from the above links.
-* Place the downloaded files in the local directory matching the paths in the JSON (or modify the JSON paths to your local storage path).
+All embodied data used in this demo are JSON files and all derived from public datasets on Hugging Face. 
+<!-- Detailed source information, access links, and usage notes are provided below:  -->
+
+**1. Cosmos Reasoning SFT Video Data**
+* **Hugging Face Link**: <a href="https://huggingface.co/datasets/nvidia/Cosmos-Reason1-SFT-Dataset/tree/main/robovqa ">nvidia/Cosmos-Reason1-SFT-Dataset/robovqa</a>
+<!-- * **Data Fields**: `video` (local path to MP4 files), `conversations`(user-agent instruction judgment dialogues) -->
+<!-- * **Task Scenario**: Judge the feasibility of agent executing given instructions (e.g., "put the robot toy in the shelf" → select yes/no option) -->
+
+**2. Robopoint GQA Image Data**
+* **Hugging Face Link**:  <a href="https://huggingface.co/datasets/wentao-yuan/robopoint-data/tree/main ">wentao-yuan/robopoint-data</a>
+<!-- * **Data Fields**: `images` (local path to JPG files), `messages` (multi-turn object material QA dialogues)  -->
+<!-- * **Task Scenario**: Answer object material questions based on images (e.g., "What's the toilet made of?" → single-word response) -->
+
+**3. VSI-Bench ScanNetpp Video Data**
+* **Hugging Face Link**: <a href="https://huggingface.co/datasets/nyu-visionx/VSI-Bench/tree/main ">nyu-visionx/VSI-Bench</a>
+<!-- * **Data Fields**: `video` (local path to MP4 files), `conversations`, `data_source` (ScanNetpp), `question_type` (object counting/relative distance) -->
+<!-- * **Task Scenario**: Video-based scene understanding (e.g., counting objects, judging relative distances between objects)  -->
+
+**Key Notes** 
+
+* The JSON files in this repo use local file paths (e.g., `/datasets/xxx`) that correspond to the file structure of the original Hugging Face datasets. 
+
+* Before running the demo:\
+    *a.* Download the three datasets from the above links.\
+    *b.* Place the downloaded files in the local directory matching the paths in the JSON (or modify the JSON paths to your local storage path).
 * For data licensing, preprocessing details, and full file lists, refer to the "License" and "Dataset Card" sections on each Hugging Face dataset page.
 * All datasets are used in compliance with their original open-source agreements; please adhere to the usage restrictions specified by the dataset authors.
 
