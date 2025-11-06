@@ -254,14 +254,9 @@ Please refer to **[Evaluation.md](Evaluation.md)**.
 - Email: {vito.dai, jason.ju}@x-humanoid.com
 <!-- - Project website: [pelican-vl.github.ioo](https://pelican-vl.github.io/) -->
 
-<!-- ## License -->
-<!-- This project is released under the [MIT license](LICENSE). Parts of this project contain code and models from other sources, which are subject to their respective licenses. -->
-
 ## Citation
 
 If you find our Pelican-VL useful in your research, please cite:
-
-
 
 ```BibTeX
 @article{Pelican-VL-1.0,
