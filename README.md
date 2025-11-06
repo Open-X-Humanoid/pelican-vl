@@ -126,7 +126,7 @@ pip install flash-attn==2.6.1 --no-build-isolation # if GPU supports
 Here, we provide some simple embodied examples to show how to use the chat model Fine-Tuning with <a href="https://swift.readthedocs.io/zh-cn/latest/index.html">`Swift`</a> .
 
 ### 🛠️ Installation
-Install <a href="https://swift.readthedocs.io/zh-cn/latest/index.html">`Swift`</a>
+<!-- Install <a href="https://swift.readthedocs.io/zh-cn/latest/index.html">`Swift`</a>
 ```shell
 # pip安装
 # pip install ms-swift -U
@@ -135,10 +135,19 @@ Install <a href="https://swift.readthedocs.io/zh-cn/latest/index.html">`Swift`</
 git clone https://github.com/modelscope/ms-swift.git
 cd ms-swift
 pip install -e .
-```
+``` -->
 
-Install other sources
+Install <a href="https://swift.readthedocs.io/zh-cn/latest/index.html">`Swift`</a> and  other packages
 ```shell
+# pip安装
+# pip install ms-swift -U
+
+# 源代码安装
+git clone https://github.com/modelscope/ms-swift.git
+cd ms-swift
+pip install -e .
+
+
 pip install qwen-vl-utils[decord] # qwen-vl-utils 0.0.11, decord 0.6.0
 pip install deepspeed==0.16.9 # distributed training
 pip install wandb # wandb=0.21.0
@@ -148,7 +157,28 @@ pip install flash-attn==2.6.1 --no-build-isolation # if GPU supports
 
 
 ### Lora Fine-Tuning
+Dataset Source
+All JSON data files used in this demo are derived from public datasets on Hugging Face. Detailed source information, access links, and usage notes are provided below:
+#### 1. Cosmos Reasoning SFT Video Data
+Hugging Face Link: nvidia/Cosmos-Reason1-SFT-Dataset/robovqa \
+Data Fields: video (local path to MP4 files), conversations (user-agent instruction judgment dialogues) \
+Task Scenario: Judge the feasibility of agent executing given instructions (e.g., "put the robot toy in the shelf" → select yes/no option)
+#### 2. Robopoint GQA Image Data
+Hugging Face Link: wentao-yuan/robopoint-data \
+Data Fields: images (local path to JPG files), messages (multi-turn object material QA dialogues) \
+Task Scenario: Answer object material questions based on images (e.g., "What's the toilet made of?" → single-word response)
+#### 3. VSI-Bench ScanNetpp Video Data
+Hugging Face Link: nyu-visionx/VSI-Bench \
+Data Fields: video (local path to MP4 files), conversations, data_source (ScanNetpp), question_type (object counting/relative distance) \
+Task Scenario: Video-based scene understanding (e.g., counting objects, judging relative distances between objects) 
+#### **Key Notes** 
+The JSON files in this repo use local file paths (e.g., /datasets/xxx) that correspond to the file structure of the original Hugging Face datasets. 
 
+**Before running the demo**:
+* Download the three datasets from the above links.
+* Place the downloaded files in the local directory matching the paths in the JSON (or modify the JSON paths to your local storage path).
+* For data licensing, preprocessing details, and full file lists, refer to the "License" and "Dataset Card" sections on each Hugging Face dataset page.
+* All datasets are used in compliance with their original open-source agreements; please adhere to the usage restrictions specified by the dataset authors.
 
 ```shell
 # Using an interactive command line for training.
@@ -213,7 +243,7 @@ Please refer to **[Evaluation.md](Evaluation.md)**.
 
 ## 📬 Contact With Us
 - Email: {vito.dai, jason.ju}@x-humanoid.com
-- Project website: [pelican-vl.github.ioo](https://pelican-vl.github.io/)
+<!-- - Project website: [pelican-vl.github.ioo](https://pelican-vl.github.io/) -->
 
 ## License
 
