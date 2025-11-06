@@ -4,7 +4,7 @@
 > Beijing Innovation Center of Humanoid Robotics (X-Humanoid)
 
 <p align="center">
-    <img src="./images/Pelican_logo.png" width="400"/>
+    <img src="./images/Pelican_logo.png" width="300"/>
 <p>
 
 
