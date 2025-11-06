@@ -84,7 +84,7 @@ Benchmark performance radar comparison of Pelican-VL 1.0 (72B) against other mod
 
 
 
-## 🛠️ Downstream Applications
+## 💡 Downstream Applications
 
 
 Please see our project website：🌐 <a href="https://pelican-vl.github.io">pelican-vl.github.io</a>
@@ -93,10 +93,10 @@ Please see our project website：🌐 <a href="https://pelican-vl.github.io">pel
 ## 🧠 Open-Source Weights
 We will released our pelican models on 🤗 [Hugging Face](https://huggingface.co) and 🤖 [ModelScope](https://modelscope.cn):
 
-| Model Name | Parameters | Link | 
-|------------|----------------|------|
-| Pelican1.0-VL-7B | 7B    | [🔗 Link](https://huggingface.co/) TBD|
-| Pelican1.0-VL-72B | 72B  | [🔗 Link](https://huggingface.co/) TBD |
+| Model Name | Parameters |  Checkpoint| Checkpoint | 
+|------------|-------------|------|------|
+| Pelican1.0-VL-7B | 7B    | [🤗 Link](https://huggingface.co/) TBD|[🤖 Link](https://modelscope.cn)TBD|
+| Pelican1.0-VL-72B | 72B  | [🤗 Link](https://huggingface.co/) TBD|[🤖 Link](https://modelscope.cn)TBD|
 
 
 
@@ -159,11 +159,11 @@ pip install flash-attn==2.6.1 --no-build-isolation # if GPU supports
 
 All embodied data used in this demo are JSON files and all derived from public datasets on Hugging Face:
 
-| Dataset Name | Data Type | Link | 
+| Dataset Name | Type | 🤗 | 
 |------------|-----|-----------|
-| Cosmos Reasoning SFT Data | Video    | [🤗 Link](https://huggingface.co/datasets/nvidia/Cosmos-Reason1-SFT-Dataset/tree/main/robovqa )  |
-| Robopoint GQA Data | Image  | [🤗 Link](https://huggingface.co/datasets/wentao-yuan/robopoint-data/tree/main )  |
-| VSI-Bench ScanNetpp Data | Video  | [🤗 Link](https://huggingface.co/datasets/nyu-visionx/VSI-Bench/tree/main ) |
+| Cosmos Reasoning SFT Data | Video    | [Link](https://huggingface.co/datasets/nvidia/Cosmos-Reason1-SFT-Dataset/tree/main/robovqa )  |
+| Robopoint GQA Data | Image  | [Link](https://huggingface.co/datasets/wentao-yuan/robopoint-data/tree/main )  |
+| VSI-Bench ScanNetpp Data | Video  | [Link](https://huggingface.co/datasets/nyu-visionx/VSI-Bench/tree/main ) |
 
 
 <!-- **1. Cosmos Reasoning SFT Video Data** -->
