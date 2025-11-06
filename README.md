@@ -22,9 +22,9 @@
 
 
 
-<p align="center">
+<!-- <p align="center">
     <img src="./images/x_humanoid_logo_v3.png" width="400"/>
-<p>
+<p> -->
 
 ## 🚀🚀🚀 News
 
