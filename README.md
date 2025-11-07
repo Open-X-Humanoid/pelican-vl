@@ -99,49 +99,17 @@ We will released our pelican models on 🤗 [Hugging Face](https://huggingface.c
 | Pelican1.0-VL-72B | 72B  | [🤗 Link](https://huggingface.co/) TBD|[🤖 Link](https://modelscope.cn)TBD|
 
 
-
-<!-- ## 🛠️ Installation
-Install swift
-```shell
-# pip安装
-# pip install ms-swift -U
-
-# 源代码安装
-git clone https://github.com/modelscope/ms-swift.git
-cd ms-swift
-pip install -e .
-```
-
-Install other sources
-```shell
-pip install qwen-vl-utils[decord] # qwen-vl-utils 0.0.11, decord 0.6.0
-pip install deepspeed==0.16.9 # distributed training
-pip install wandb # wandb=0.21.0
-pip install transformers==4.51.1 
-pip install flash-attn==2.6.1 --no-build-isolation # if GPU supports
-``` -->
-
 ## Quick Start
 
 Here, We provide you a simple script of LoRa fine-tuning and give you some embodied samples, allowing you to experience how to experiment with embodied data. Training is based on the LLM training and deployment framework <a href="https://swift.readthedocs.io/zh-cn/latest/index.html">**`Swift`**</a>.
 
 ### 🛠️ Installation
-<!-- Install <a href="https://swift.readthedocs.io/zh-cn/latest/index.html">`Swift`</a>
-```shell
-# pip安装
-# pip install ms-swift -U
-
-# 源代码安装
-git clone https://github.com/modelscope/ms-swift.git
-cd ms-swift
-pip install -e .
-``` -->
 
 ```shell
-# pip安装
+# pip installation
 # pip install ms-swift -U
 
-# 源代码安装
+# Source code installation
 git clone https://github.com/modelscope/ms-swift.git
 cd ms-swift
 pip install -e .
