@@ -8,7 +8,6 @@
 <p>
 
 
-
 <p align="center">
         📖 <a href="https://arxiv.org/pdf/2511.00108">Pelican-VL 1.0 Report</a>&nbsp&nbsp
         | &nbsp&nbsp🤗 <a href="https://huggingface.co">Hugging Face(TBD)</a>&nbsp&nbsp
@@ -20,13 +19,11 @@
 </p>
 
 
-
-
 <!-- <p align="center">
     <img src="./images/x_humanoid_logo_v3.png" width="400"/>
 <p> -->
 
-## 🚀🚀🚀 News
+## 🚀 News
 
 * 2025.10.30: We have released the [**Pelican-VL 1.0 Report**](https://arxiv.org/pdf/2511.00108). The 7B、72B model for open source is coming soon. For more details, please check our report!
 
@@ -51,15 +48,6 @@ We presents Pelican-VL 1.0, a new family of open-source embodied brain models wi
 * **Self-Correction and Iterative Learning**: Through DPPO cyclic training, Pelican-VL exhibits a “self-correcting” capability. After each reinforcement learning cycle, the model automatically generates new challenging samples for retraining—similar to repeated practice and reflection. Over time, its weaknesses are gradually addressed, and its abilities continuously improve. This process mirrors the concept of “deliberate practice,” allowing Pelican-VL to advance iteratively and achieve performance on par with top-tier proprietary systems.
 
 
-<!-- #### Overview:
-
-<p align="center">
-    <img src="./images/teaser.jpg" width="100%"/>
-<p> -->
-
-
-
-
 ## Performance
 
 ### Overall Tasks
@@ -70,8 +58,6 @@ We presents Pelican-VL 1.0, a new family of open-source embodied brain models wi
 Performance comparison of Pelican-VL1.0. (Left) Comparison against models with ≤100B parameters. The shaded(pink) region highlights the performance gain over our baseline. (Right) Comparison against models with ≥100B parameters, including leading open-source and proprietary models, where our model also demonstrates SOTA performance.
 </div>
 
-<!-- Performance comparison of Pelican-VL1.0. (Left) Comparison against models with ≤100B parameters. The shaded(pink) region highlights the performance gain over our baseline. (Right) Comparison against models with ≥100B parameters, including leading open-source and proprietary models, where our model also demonstrates SOTA performance. -->
-
 
 ### Detail Dimensions
 
@@ -80,8 +66,6 @@ Performance comparison of Pelican-VL1.0. (Left) Comparison against models with �
 	<img src="./images/bmk_72B+1.jpg" width="45%" />
 Benchmark performance radar comparison of Pelican-VL 1.0 (72B) against other models across nine dimensions.
 </div>
-<!-- Benchmark performance radar comparison of Pelican-VL 1.0 (72B) against other models across nine dimensions. -->
-
 
 
 ## 💡 Downstream Applications
@@ -99,49 +83,17 @@ We will released our pelican models on 🤗 [Hugging Face](https://huggingface.c
 | Pelican1.0-VL-72B | 72B  | [🤗 Link](https://huggingface.co/) TBD|[🤖 Link](https://modelscope.cn)TBD|
 
 
-
-<!-- ## 🛠️ Installation
-Install swift
-```shell
-# pip安装
-# pip install ms-swift -U
-
-# 源代码安装
-git clone https://github.com/modelscope/ms-swift.git
-cd ms-swift
-pip install -e .
-```
-
-Install other sources
-```shell
-pip install qwen-vl-utils[decord] # qwen-vl-utils 0.0.11, decord 0.6.0
-pip install deepspeed==0.16.9 # distributed training
-pip install wandb # wandb=0.21.0
-pip install transformers==4.51.1 
-pip install flash-attn==2.6.1 --no-build-isolation # if GPU supports
-``` -->
-
 ## Quick Start
 
 Here, We provide you a simple script of LoRa fine-tuning and give you some embodied samples, allowing you to experience how to experiment with embodied data. Training is based on the LLM training and deployment framework <a href="https://swift.readthedocs.io/zh-cn/latest/index.html">**`Swift`**</a>.
 
 ### 🛠️ Installation
-<!-- Install <a href="https://swift.readthedocs.io/zh-cn/latest/index.html">`Swift`</a>
-```shell
-# pip安装
-# pip install ms-swift -U
-
-# 源代码安装
-git clone https://github.com/modelscope/ms-swift.git
-cd ms-swift
-pip install -e .
-``` -->
 
 ```shell
-# pip安装
+# pip installation
 # pip install ms-swift -U
 
-# 源代码安装
+# Source code installation
 git clone https://github.com/modelscope/ms-swift.git
 cd ms-swift
 pip install -e .
@@ -165,32 +117,7 @@ All embodied data used in this demo are JSON files and all derived from public d
 | Robopoint GQA Data | Image  | [Link](https://huggingface.co/datasets/wentao-yuan/robopoint-data/tree/main )  |
 | VSI-Bench ScanNetpp Data | Video  | [Link](https://huggingface.co/datasets/nyu-visionx/VSI-Bench/tree/main ) |
 
-
-<!-- **1. Cosmos Reasoning SFT Video Data** -->
-<!-- * **Hugging Face Link**: <a href="https://huggingface.co/datasets/nvidia/Cosmos-Reason1-SFT-Dataset/tree/main/robovqa ">nvidia/Cosmos-Reason1-SFT-Dataset/robovqa</a> -->
-<!-- * **Data Fields**: `video` (local path to MP4 files), `conversations`(user-agent instruction judgment dialogues) -->
-<!-- * **Task Scenario**: Judge the feasibility of agent executing given instructions (e.g., "put the robot toy in the shelf" → select yes/no option) -->
-
-<!-- **2. Robopoint GQA Image Data** -->
-<!-- * **Hugging Face Link**:  <a href="https://huggingface.co/datasets/wentao-yuan/robopoint-data/tree/main ">wentao-yuan/robopoint-data</a> -->
-<!-- * **Data Fields**: `images` (local path to JPG files), `messages` (multi-turn object material QA dialogues)  -->
-<!-- * **Task Scenario**: Answer object material questions based on images (e.g., "What's the toilet made of?" → single-word response) -->
-
-<!-- **3. VSI-Bench ScanNetpp Video Data** -->
-<!-- * **Hugging Face Link**: <a href="https://huggingface.co/datasets/nyu-visionx/VSI-Bench/tree/main ">nyu-visionx/VSI-Bench</a> -->
-<!-- * **Data Fields**: `video` (local path to MP4 files), `conversations`, `data_source` (ScanNetpp), `question_type` (object counting/relative distance) -->
-<!-- * **Task Scenario**: Video-based scene understanding (e.g., counting objects, judging relative distances between objects)  -->
-
-<!-- **Key Notes**  -->
-
-<!-- The JSON files in this repo use local file paths (e.g., `/datasets/xxx`) that correspond to the file structure of the original Hugging Face datasets.  -->
 Download the three datasets from the above links, Place the downloaded files in the local directory(e.g., `/datasets/xxx`) matching the paths in the JSON (or modify the JSON paths to your local storage path).
-
-<!-- * Before running the demo:\ -->
-<!-- *a.* Download the three datasets from the above links.\ -->
-<!-- *b.* Place the downloaded files in the local directory matching the paths in the JSON (or modify the JSON paths to your local storage path). -->
-<!-- * For data licensing, preprocessing details, and full file lists, refer to the "License" and "Dataset Card" sections on each Hugging Face dataset page. -->
-<!-- * All datasets are used in compliance with their original open-source agreements; please adhere to the usage restrictions specified by the dataset authors. -->
 
 ```shell
 # Using an interactive command line for training.
@@ -252,7 +179,6 @@ Please refer to **[Evaluation.md](evaluation/README.md)**.
 
 ## 📬 Contact With Us
 - Email: {vito.dai, jason.ju}@x-humanoid.com
-<!-- - Project website: [pelican-vl.github.ioo](https://pelican-vl.github.io/) -->
 
 ## Citation
 
