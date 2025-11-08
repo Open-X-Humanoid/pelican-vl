@@ -1,0 +1,7 @@
+test_split: val
+dataset_path: ../../../datasets/BLINK
+output_type: generate_until
+doc_to_visual: !function utils.blink_doc_to_visual
+doc_to_text: !function utils.blink_doc_to_text
+doc_to_target: !function utils.blink_doc_to_answer
+process_results: !function utils.blink_process_results_generation

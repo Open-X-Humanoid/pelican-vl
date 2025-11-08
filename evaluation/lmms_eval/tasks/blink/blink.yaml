@@ -1,0 +1,16 @@
+group: blink
+task:
+  - blink_art_style
+  - blink_counting
+  - blink_forensic_detection
+  - blink_functional_correspondence
+  - blink_iq_test
+  - blink_jigsaw
+  - blink_multiview_reasoning
+  - blink_object_localization
+  - blink_relative_depth
+  - blink_relative_reflectance
+  - blink_semantic_correspondence
+  - blink_spatial_relation
+  - blink_visual_correspondence
+  - blink_visual_similarity
