@@ -23,7 +23,7 @@
     <img src="./images/x_humanoid_logo_v3.png" width="400"/>
 <p> -->
 
-## 🚀🚀🚀 News
+## 🚀 News
 
 * 2025.10.30: We have released the [**Pelican-VL 1.0 Report**](https://arxiv.org/pdf/2511.00108). The 7B、72B model for open source is coming soon. For more details, please check our report!
 
