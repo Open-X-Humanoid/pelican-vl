@@ -98,9 +98,10 @@ git clone https://github.com/modelscope/ms-swift.git
 cd ms-swift
 pip install -e .
 
-pip install qwen-vl-utils[decord] # qwen-vl-utils 0.0.11, decord 0.6.0
+pip install qwen-vl-utils[decord]==0.0.11 # qwen-vl-utils 0.0.11, decord 0.6.0
 pip install deepspeed==0.16.9 # distributed training
 pip install wandb # wandb=0.21.0
+pip install msgspec
 pip install transformers==4.51.1 
 pip install flash-attn==2.6.1 --no-build-isolation # if GPU supports
 ```
@@ -111,11 +112,11 @@ pip install flash-attn==2.6.1 --no-build-isolation # if GPU supports
 
 All embodied data used in this demo are JSON files and all derived from public datasets on Hugging Face:
 
-| Dataset Name | Type | 🤗 | 
+| Dataset Name | Type | Link | 
 |------------|-----|-----------|
-| Cosmos Reasoning SFT Data | Video    | [Link](https://huggingface.co/datasets/nvidia/Cosmos-Reason1-SFT-Dataset/tree/main/robovqa )  |
-| Robopoint GQA Data | Image  | [Link](https://huggingface.co/datasets/wentao-yuan/robopoint-data/tree/main )  |
-| VSI-Bench ScanNetpp Data | Video  | [Link](https://huggingface.co/datasets/nyu-visionx/VSI-Bench/tree/main ) |
+| Cosmos Reasoning SFT Data | Video    | 🤗 [Link](https://huggingface.co/datasets/nvidia/Cosmos-Reason1-SFT-Dataset/tree/main/robovqa )  |
+| Robopoint GQA Data | Image  | 🤗 [Link](https://huggingface.co/datasets/wentao-yuan/robopoint-data/tree/main )  |
+| VSI-Bench ScanNetpp Data | Video  | 🤗 [Link](https://huggingface.co/datasets/nyu-visionx/VSI-Bench/tree/main ) |
 
 Download the three datasets from the above links, Place the downloaded files in the local directory(e.g., `/datasets/xxx`) matching the paths in the JSON (or modify the JSON paths to your local storage path).
 
