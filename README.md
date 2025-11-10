@@ -1,7 +1,7 @@
 # Pelican-VL 1.0: A Foundation Brain Model for Embodied Intelligence
-> **WFM System Group**
+<!-- > **WFM System Group** -->
 
-> Beijing Innovation Center of Humanoid Robotics (X-Humanoid)
+<!-- > Beijing Innovation Center of Humanoid Robotics (X-Humanoid) -->
 
 <p align="center">
     <img src="./images/Pelican_logo.png" width="300"/>
