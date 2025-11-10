@@ -175,7 +175,7 @@ For more detailed parameters, please refer to the official documents of <a href=
 ## Evaluation Reproduction
 To facilitate faithful reproduction of our reported results, we summarize our official evaluation settings below.
 
-Please refer to **[Evaluation.md](Evaluation.md)**.
+Please refer to **[Evaluation.md](evaluation/README.md)**.
 
 ## 📬 Contact With Us
 - Email: {vito.dai, jason.ju}@x-humanoid.com

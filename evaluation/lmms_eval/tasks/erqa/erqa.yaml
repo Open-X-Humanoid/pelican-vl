@@ -1,0 +1,22 @@
+task: erqa
+dataset_path: "json"
+visual_root: ../../../datasets/ERQA
+dataset_kwargs:
+  data_files:
+    - ../../../datasets/ERQA/erqa.jsonl
+test_split: train
+output_type: generate_until
+
+metric_list:
+  - metric: score
+    aggregation: !function utils.erqa_aggregate_score
+    higher_is_better: true
+
+doc_to_visual: !function utils.erqa_doc_to_visual
+doc_to_text: !function utils.erqa_doc_to_text
+doc_to_target: !function utils.erqa_doc_to_answer
+process_results: !function utils.erqa_process_results_generation
+lmms_eval_specific_kwargs:
+  default:
+    pre_prompt: ""
+    post_prompt: ""

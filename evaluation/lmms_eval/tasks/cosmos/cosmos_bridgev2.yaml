@@ -1,0 +1,12 @@
+include: _default_template_yaml
+task: cosmos_bridgev2
+dataset_name: bridgev2
+test_split: benchmark
+lmms_eval_specific_kwargs:
+    sub_task: "bridgev2"
+    pre_prompt: ""
+    post_prompt: "\nAnswer with the option's letter from the given choices directly."
+metric_list:
+  - metric: score
+    aggregation: !function utils.cosmos_aggregate_score
+    higher_is_better: true

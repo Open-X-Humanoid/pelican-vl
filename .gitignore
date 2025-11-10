@@ -45,3 +45,4 @@ wandb
 results
 result
 __pycache__/
+.idea

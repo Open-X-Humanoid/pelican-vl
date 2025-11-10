@@ -1,0 +1,7 @@
+dataset_path: ../../../datasets/Cosmos-Reason1-Benchmark
+visual_root: ../../../datasets/Cosmos-Reason1-Benchmark
+output_type: generate_until
+doc_to_visual: !function utils.cosmos_doc_to_visual
+doc_to_text: !function utils.cosmos_doc_to_text
+doc_to_target: !function utils.cosmos_doc_to_answer
+process_results: !function utils.cosmos_process_results_generation

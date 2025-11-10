@@ -1,0 +1,7 @@
+group: cosmos
+task:
+  - cosmos_agibot
+  - cosmos_bridgev2
+  - cosmos_holoassist
+  - cosmos_robofail
+  - cosmos_robovqa
