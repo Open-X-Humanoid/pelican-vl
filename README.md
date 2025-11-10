@@ -9,7 +9,7 @@
 
 
 <p align="center">
-        📖 <a href="https://arxiv.org/pdf/2511.00108">Pelican-VL 1.0 Report</a>&nbsp&nbsp
+        📖 <a href="https://arxiv.org/abs/2511.00108">Pelican-VL 1.0 Report</a>&nbsp&nbsp
         | &nbsp&nbsp🤗 <a href="https://huggingface.co">Hugging Face(TBD)</a>&nbsp&nbsp
         | &nbsp&nbsp🤖 <a href="https://modelscope.cn">ModelScope(TBD)</a>&nbsp&nbsp
 <br>
@@ -25,7 +25,7 @@
 
 ## 🚀 News
 
-* 2025.10.30: We have released the [**Pelican-VL 1.0 Report**](https://arxiv.org/pdf/2511.00108). The 7B、72B model for open source is coming soon. For more details, please check our report!
+* 2025.10.30: We have released the [**Pelican-VL 1.0 Report**](https://arxiv.org/abs/2511.00108). The 7B、72B model for open source is coming soon. For more details, please check our report!
 
 
 ## Introduction
