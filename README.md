@@ -10,8 +10,8 @@
 
 <p align="center">
         📖 <a href="https://arxiv.org/abs/2511.00108">Pelican-VL 1.0 Report</a>&nbsp&nbsp
-        | &nbsp&nbsp🤗 <a href="https://huggingface.co/X-Humanoid">Hugging Face</a>&nbsp&nbsp
-        | &nbsp&nbsp🤖 <a href="https://modelscope.cn/organization/X-Humanoid?tab=model">ModelScope</a>&nbsp&nbsp
+        | &nbsp&nbsp🤗 <a href="https://huggingface.co/collections/X-Humanoid/pelican-vl-10">Hugging Face</a>&nbsp&nbsp
+        | &nbsp&nbsp🤖 <a href="https://modelscope.cn/collections/Pelican10-VL-1036b65bbdfe46">ModelScope</a>&nbsp&nbsp
 <br>
         🧰 <a href="#quick-start">Quick Start</a>&nbsp&nbsp
         | &nbsp&nbsp🌐 <a href="https://pelican-vl.github.io">Project Website</a>&nbsp&nbsp
