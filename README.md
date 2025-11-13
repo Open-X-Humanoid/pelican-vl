@@ -10,8 +10,8 @@
 
 <p align="center">
         📖 <a href="https://arxiv.org/abs/2511.00108">Pelican-VL 1.0 Report</a>&nbsp&nbsp
-        | &nbsp&nbsp🤗 <a href="https://huggingface.co">Hugging Face(TBD)</a>&nbsp&nbsp
-        | &nbsp&nbsp🤖 <a href="https://modelscope.cn">ModelScope(TBD)</a>&nbsp&nbsp
+        | &nbsp&nbsp🤗 <a href="https://huggingface.co/X-Humanoid">Hugging Face</a>&nbsp&nbsp
+        | &nbsp&nbsp🤖 <a href="https://modelscope.cn/organization/X-Humanoid?tab=model">ModelScope</a>&nbsp&nbsp
 <br>
         🧰 <a href="#quick-start">Quick Start</a>&nbsp&nbsp
         | &nbsp&nbsp🌐 <a href="https://pelican-vl.github.io">Project Website</a>&nbsp&nbsp
@@ -79,8 +79,8 @@ We will released our pelican models on 🤗 [Hugging Face](https://huggingface.c
 
 | Model Name | Parameters |  Checkpoint| Checkpoint | 
 |------------|-------------|------|------|
-| Pelican1.0-VL-7B | 7B    | [🤗 Link](https://huggingface.co/) TBD|[🤖 Link](https://modelscope.cn)TBD|
-| Pelican1.0-VL-72B | 72B  | [🤗 Link](https://huggingface.co/) TBD|[🤖 Link](https://modelscope.cn)TBD|
+| Pelican1.0-VL-7B | 7B    | [🤗 Link](https://huggingface.co/X-Humanoid/Pelican1.0-VL-7B) TBD|[🤖 Link](https://modelscope.cn/models/X-Humanoid/Pelican1.0-VL-7B)|
+| Pelican1.0-VL-72B | 72B  | [🤗 Link](https://huggingface.co/X-Humanoid/Pelican1.0-VL-72B) TBD|[🤖 Link](https://modelscope.cn/models/X-Humanoid/Pelican1.0-VL-72B)|
 
 
 ## Quick Start
