@@ -25,7 +25,9 @@
 
 ## 🚀 News
 
-* 2025.10.30: We have released the [**Pelican-VL 1.0 Report**](https://arxiv.org/abs/2511.00108). The 7B、72B model for open source is coming soon. For more details, please check our report!
+- **`2025-11-13`**: **Pelican1.0-VL-7B** and **Pelican1.0-VL-72B** model checkpoint has been released in 🤗 <a href="https://huggingface.co/X-Humanoid">Hugging Face Link</a> and 🤖 <a href="https://modelscope.cn/organization/X-Humanoid?tab=model">ModelScope Link</a>.
+
+- **`2025-10-30`**: We have released the [**Pelican-VL 1.0 Report**](https://arxiv.org/abs/2511.00108). The 7B、72B model for open source is coming soon. For more details, please check our report!
 
 
 ## Introduction
