@@ -79,8 +79,8 @@ We will released our pelican models on 🤗 [Hugging Face](https://huggingface.c
 
 | Model Name | Parameters |  Checkpoint| Checkpoint | 
 |------------|-------------|------|------|
-| Pelican1.0-VL-7B | 7B    | [🤗 Link](https://huggingface.co/X-Humanoid/Pelican1.0-VL-7B) TBD|[🤖 Link](https://modelscope.cn/models/X-Humanoid/Pelican1.0-VL-7B)|
-| Pelican1.0-VL-72B | 72B  | [🤗 Link](https://huggingface.co/X-Humanoid/Pelican1.0-VL-72B) TBD|[🤖 Link](https://modelscope.cn/models/X-Humanoid/Pelican1.0-VL-72B)|
+| Pelican1.0-VL-7B | 7B    | [🤗 Link](https://huggingface.co/X-Humanoid/Pelican1.0-VL-7B) |[🤖 Link](https://modelscope.cn/models/X-Humanoid/Pelican1.0-VL-7B)|
+| Pelican1.0-VL-72B | 72B  | [🤗 Link](https://huggingface.co/X-Humanoid/Pelican1.0-VL-72B) |[🤖 Link](https://modelscope.cn/models/X-Humanoid/Pelican1.0-VL-72B)|
 
 
 ## Quick Start
