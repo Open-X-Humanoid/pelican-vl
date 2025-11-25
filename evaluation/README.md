@@ -17,6 +17,7 @@ git clone https://github.com/Open-X-Humanoid/pelican-vl.git
 cd pelican-vl/evaluation
 pip install -e .
 pip install vllm==0.11.0
+pip install tensorflow-cpu
 ```
 
 ---
