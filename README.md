@@ -197,3 +197,8 @@ If you find our Pelican-VL useful in your research, please cite:
   year={2025}
 }
 ```
+🗨️ Discussions 🗨️
+
+If you're interested in Pelican-VL, welcome to join our WeChat group for discussions.
+
+ <img src="./images/qrcode.png" width="300"/>
